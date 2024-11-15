@@ -3,10 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Beauty Care - Tu Belleza Natural</title>
+    <style>
+    /* Restablecer márgenes y padding de todos los elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general de la página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f3f3;
+            color: #4a4a4a;
+        }
+
+        /* Encabezado */
+        header {
+            background: url(img/fondo-100.jpg);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 80px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+
+        header button {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #ff3385;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #ff66b2;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe6f7;
+        }
+
+        /* Sección Acerca de Nosotros */
+        #acerca-de {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+
+        #acerca-de h2 {
+            font-size: 38px;
+            color: #ff66b2;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #acerca-de p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        .imagen-acerca-de {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        /* Sección Servicios */
+        #servicios {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffe6f7;
+        }
+
+        #servicios h2 {
+            font-size: 38px;
+            color: #ff66b2;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #servicios p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        .servicios {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .servicio {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .servicio:hover {
+            transform: translateY(-10px);
+        }
+
+        .servicio img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .servicio h3 {
+            font-size: 22px;
+            color: #ff66b2;
+            margin-bottom: 10px;
+        }
+
+        .servicio p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #777;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+        #acerca-de {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+        }
+
+        .contenido-acerca-de {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 90%; /* Aquí se ajusta el ancho del contenedor al 80% */
+            max-width: 1200px; /* Se limita el ancho máximo para que no se vea demasiado grande en pantallas grandes */
+        }
+
+        .texto-acerca-de {
+            flex: 1;
+            max-width: 50%;
+            text-align: justify;
+        }
+
+        .imagen-acerca-de {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .imagen-acerca-de img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Nueva Pagina</h1>
-    <p>Esta es mi primera página web en Codespaces.</p>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Beauty Care</h1>
+        <p>Bienvenidos a Beauty Care, el lugar donde descubrirás todo lo relacionado con el cuidado personal, belleza natural y bienestar. Ofrecemos productos, servicios y consejos para que te sientas bien desde adentro hacia afuera. ¡Tu belleza comienza aquí!</p>
+        <button>Explora más</button>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#acerca-de">Acerca de Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#video">Ver Video</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section id="acerca-de">
+        <div class="contenido-acerca-de">
+            <div class="texto-acerca-de">
+                <h2>Acerca de Beauty Care</h2>
+                <p>Beauty Care es una empresa dedicada a ofrecer lo mejor en productos de belleza, cuidado personal y bienestar. Creemos que cada persona merece sentirse increíble, por eso nos enfocamos en ofrecerte los mejores servicios de spa, tratamientos faciales, cuidados de la piel, y más. Con años de experiencia en la industria de la belleza, nos enorgullece brindar servicios personalizados que se adaptan a tus necesidades.</p>
+                <p>Nos apasiona la belleza natural, por lo que trabajamos con marcas comprometidas con el medio ambiente y la sostenibilidad. Nuestros productos están elaborados con ingredientes de alta calidad, seguros para tu piel y respetuosos con el planeta. Nos aseguramos de brindarte una experiencia única que resalte tu belleza interior y exterior.</p>
+            </div>
+            <div class="imagen-acerca-de">
+                <img src="img/Bienestar y relajación.jpg" alt="Bienestar y relajación">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>En Beauty Care, ofrecemos una variedad de servicios diseñados para cuidar de ti. Ya sea que necesites un momento de relajación, un tratamiento de belleza o asesoramiento en cuidados de la piel, estamos aquí para ayudarte.</p>
+        <div class="servicios">
+            <div class="servicio">
+                <img src="img/Servicios de Spa.jpg" alt="Servicios de Spa">
+                <h3>Servicios de Spa</h3>
+                <p>Relájate y rejuvenece con nuestros exclusivos tratamientos de spa. Desde masajes relajantes hasta terapias faciales, todo diseñado para revitalizar tu cuerpo y mente. Vive la experiencia de un spa de lujo sin salir de la ciudad.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/Cuidado de la piel.jpg" alt="Cuidado de la piel">
+                <h3>Cuidado de la Piel</h3>
+                <p>Tu piel es única, y merece los mejores cuidados. Descubre nuestros tratamientos faciales personalizados, realizados por expertos, con productos de alta gama. Ofrecemos limpieza profunda, hidratación, exfoliación y todo lo necesario para una piel radiante.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/Maquillaje Profesional.jpg" alt="Maquillaje Profesional">
+                <h3>Maquillaje Profesional</h3>
+                <p>El maquillaje es un arte, y en Beauty Care lo llevamos a otro nivel. Nuestros maquilladores profesionales te ayudarán a resaltar tu belleza con un estilo personalizado para cada ocasión, ya sea una fiesta, boda, o simplemente para sentirte más hermosa en tu día a día.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Beauty Care - Todos los derechos reservados, Leidy Tatiana Bolivar.</p>
+    </footer>
+
 </body>
 </html>
